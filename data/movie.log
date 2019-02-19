@@ -1,0 +1,72 @@
+INFO: 2019-02-15 01:40:33,294: iPhone8.2, iTunes[839], Started_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,294: iPhone8.2, iTunes[2025], Started_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,294: iPhone8.2, iTunes[972], Started_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,294: iPhone8.2, iTunes[3502], Started_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,295: iPhone8.2, iTunes[1586], Requested_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,295: iPhone8.2, iTunes[3729], Requested_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,295: iPhone8.2, iTunes[1632], Requested_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,295: iPhone8.2, iTunes[1320], Requested_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,295: iPhone8.2, iTunes[2598], Uploaded_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,295: iPhone8.2, iTunes[2626], Uploaded_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,295: iPhone8.2, iTunes[3402], Uploaded_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,295: iPhone8.2, iTunes[2102], Uploaded_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,295: AppleTV5.3, iTunes[3943], Started_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,295: AppleTV5.3, iTunes[2915], Started_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,295: AppleTV5.3, iTunes[3545], Started_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,296: AppleTV5.3, iTunes[707], Started_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,296: AppleTV5.3, iTunes[404], Requested_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,296: AppleTV5.3, iTunes[2387], Requested_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,296: AppleTV5.3, iTunes[3943], Requested_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,296: AppleTV5.3, iTunes[1441], Requested_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,296: AppleTV5.3, iTunes[3451], Uploaded_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,296: AppleTV5.3, iTunes[918], Uploaded_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,296: AppleTV5.3, iTunes[978], Uploaded_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,296: AppleTV5.3, iTunes[442], Uploaded_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,296: iPad8.5, iTunes[80], Started_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,296: iPad8.5, iTunes[3093], Started_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,296: iPad8.5, iTunes[946], Started_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,296: iPad8.5, iTunes[2550], Started_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,297: iPad8.5, iTunes[1928], Requested_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,297: iPad8.5, iTunes[2831], Requested_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,297: iPad8.5, iTunes[1076], Requested_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,297: iPad8.5, iTunes[2744], Requested_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,297: iPad8.5, iTunes[102], Uploaded_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,297: iPad8.5, iTunes[1324], Uploaded_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,297: iPad8.5, iTunes[2971], Uploaded_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,297: iPad8.5, iTunes[3657], Uploaded_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,297: iPad5.1, iTunes[834], Started_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,297: iPad5.1, iTunes[2393], Started_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,297: iPad5.1, iTunes[1642], Started_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,298: iPad5.1, iTunes[2046], Started_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,299: iPad5.1, iTunes[1648], Requested_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,299: iPad5.1, iTunes[2185], Requested_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,299: iPad5.1, iTunes[1320], Requested_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,299: iPad5.1, iTunes[3754], Requested_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,300: iPad5.1, iTunes[3858], Uploaded_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,300: iPad5.1, iTunes[1485], Uploaded_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,300: iPad5.1, iTunes[2183], Uploaded_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,300: iPad5.1, iTunes[3660], Uploaded_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,300: iPhone11.8-Marge, iTunes[120], Started_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,300: iPhone11.8-Marge, iTunes[1930], Started_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,300: iPhone11.8-Marge, iTunes[3812], Started_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,300: iPhone11.8-Marge, iTunes[2745], Started_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,300: iPhone11.8-Marge, iTunes[568], Requested_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,300: iPhone11.8-Marge, iTunes[30], Requested_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,301: iPhone11.8-Marge, iTunes[3660], Requested_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,301: iPhone11.8-Marge, iTunes[3598], Requested_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,301: iPhone11.8-Marge, iTunes[679], Uploaded_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,301: iPhone11.8-Marge, iTunes[130], Uploaded_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,301: iPhone11.8-Marge, iTunes[1333], Uploaded_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,301: iPhone11.8-Marge, iTunes[1423], Uploaded_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[313], Started_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[1485], Started_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[502], Started_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[3465], Started_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[1387], Requested_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[3653], Requested_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[697], Requested_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[1653], Requested_Movie:The Blue Lagoon, NC-17
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[2912], Uploaded_Movie:A Fish Called Wanda, R
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[743], Uploaded_Movie:Working 9 to 5, PG
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[1366], Uploaded_Movie:Better Pancakes, G
+INFO: 2019-02-15 01:40:33,301: iPhone8.2, iTunes[2002], Uploaded_Movie:The Blue Lagoon, NC-17
