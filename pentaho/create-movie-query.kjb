@@ -291,7 +291,6 @@
       <name>Start</name>
       <description />
       <type>SPECIAL</type>
-      <attributes />
       <start>Y</start>
       <dummy>N</dummy>
       <repeat>N</repeat>
@@ -307,14 +306,12 @@
       <nr>0</nr>
       <xloc>48</xloc>
       <yloc>96</yloc>
-      <attributes_kjc />
     </entry>
     <entry>
-      <name>create-movie-query-index</name>
+      <name>create-index.sh</name>
       <description />
       <type>SHELL</type>
-      <attributes />
-      <filename>/Users/scottbeall/projects/pentaho-ktrs/create-index.sh</filename>
+      <filename>/Users/scottbeall/projects/pentaho-ktrs/scripts/create-index.sh</filename>
       <work_directory />
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -334,13 +331,11 @@
       <nr>0</nr>
       <xloc>224</xloc>
       <yloc>96</yloc>
-      <attributes_kjc />
     </entry>
     <entry>
       <name>Load-Movie-Query </name>
       <description />
       <type>TRANS</type>
-      <attributes />
       <specification_method>filename</specification_method>
       <trans_object_id />
       <filename>${Internal.Entry.Current.Directory}/load-movie-query.ktr</filename>
@@ -372,13 +367,12 @@
       <nr>0</nr>
       <xloc>400</xloc>
       <yloc>96</yloc>
-      <attributes_kjc />
     </entry>
   </entries>
   <hops>
     <hop>
       <from>Start</from>
-      <to>create-movie-query-index</to>
+      <to>create-index.sh</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -386,7 +380,7 @@
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>create-movie-query-index</from>
+      <from>create-index.sh</from>
       <to>Load-Movie-Query </to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -431,7 +425,7 @@ All types will be loaded into here</note>
       <name>{"_":"Embedded MetaStore Elements","namespace":"pentaho","type":"Default Run Configuration"}</name>
       <attribute>
         <key>Pentaho local</key>
-        <value>{"children":[{"children":[],"id":"server","value":null},{"children":[],"id":"clustered","value":"N"},{"children":[],"id":"name","value":"Pentaho local"},{"children":[],"id":"description","value":null},{"children":[],"id":"pentaho","value":"N"},{"children":[],"id":"readOnly","value":"Y"},{"children":[],"id":"sendResources","value":"N"},{"children":[],"id":"logRemoteExecutionLocally","value":"N"},{"children":[],"id":"remote","value":"N"},{"children":[],"id":"local","value":"Y"},{"children":[],"id":"showTransformations","value":"N"}],"id":"Pentaho local","value":null,"name":"Pentaho local","owner":null,"ownerPermissionsList":[]}</value>
+        <value>{"children":[{"children":[],"id":"server","value":null},{"children":[],"id":"clustered","value":"N"},{"children":[],"id":"name","value":"Pentaho local"},{"children":[],"id":"description","value":null},{"children":[],"id":"readOnly","value":"Y"},{"children":[],"id":"sendResources","value":"N"},{"children":[],"id":"logRemoteExecutionLocally","value":"N"},{"children":[],"id":"remote","value":"N"},{"children":[],"id":"local","value":"Y"},{"children":[],"id":"showTransformations","value":"N"}],"id":"Pentaho local","value":null,"name":"Pentaho local","owner":null,"ownerPermissionsList":[]}</value>
       </attribute>
     </group>
   </attributes>
