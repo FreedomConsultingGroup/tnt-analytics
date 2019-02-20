@@ -20,7 +20,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2284BECD-29BA-D38A-ED80-F3FB64E3D080" otype="Table" vid="838E6A35-8B1E-799E-A1EF-DE60EE30ED52">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="29" y="179" width="256" height="145"/>
+<bounds x="29" y="179" width="256" height="128"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="79A2182F-FE56-6D15-6FD6-3014E153420F" otype="Table" vid="1F620807-85B4-2E39-8D6C-7598B1DA3E7D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -41,10 +41,6 @@
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F0C376B6-0DB3-47E4-585E-0A1F4512A4DC" otype="Table" vid="EBE0001A-EE8A-AD01-A5B5-CF34DED05403">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="688" y="53" width="245" height="116"/>
-</OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F9E07EA6-0BCB-59B7-4876-D48909DDEF58" otype="Table" vid="E3886748-F1AA-D878-8BCC-0FEAFBB3C495">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="31" y="389" width="213" height="86"/>
 </OView>
 </objectViews>
 <connectors>
@@ -80,17 +76,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="285" y="284"/>
-<point x="332" y="284"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D7E5E2BF-98E8-0E59-B876-1EE8D35D2FAA" otype="FKIndexAssociation" vid_source="E3886748-F1AA-D878-8BCC-0FEAFBB3C495" vid_target="838E6A35-8B1E-799E-A1EF-DE60EE30ED52">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="137" y="389"/>
-<point x="137" y="324"/>
+<point x="285" y="276"/>
+<point x="332" y="276"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F68301F3-1614-9545-DD89-5B26847952AD" otype="FKIndexAssociation" vid_source="8F86E152-7F1A-0E70-1990-B59C011D7D6A" vid_target="1F620807-85B4-2E39-8D6C-7598B1DA3E7D">
