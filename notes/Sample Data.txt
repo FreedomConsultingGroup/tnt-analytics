@@ -1,0 +1,284 @@
+Hey Stephen, 
+
+Trying to keep this moving because I can see Dwayne is in and out of meetings until about 12 today.
+
+So, what we're calling "Questions" is actually a RVTM (Requirements Verification Traceability Matrix) that asks questions about
+the data in the system and the system's functionality.  The customer then "responds" (in the ERD, Customer Response) to the 
+questions and actually it's relevant requirements that are sent back that they need to show that they comply with....(Scott called
+them Question Set, in the ERD, which is fine, but, it's actually the requirements that come back.  The purpose of this piece of 
+functionality is to tailor the requirements that each specific system needs to comply to, based on the type of data and the 
+functionality that the system owner says it performs).  Make sense?
+
+The Attestation Wizard was built before the "Turbo" RVTM, which is the semi-automated process we describe before.  Users would
+say they were following/adhering to certain requirements, but, maybe/maybe not and they certainly needed to understand
+the expectation was that they'd continue to be compliant.  So, we started doing a last step of having a senior
+level system owner "attest" that they were actually doing what their responses to the RVTM said they were.  I thought I saw 
+pieces of the Attestation Wizard in the RFP, so, I mentioned to Dwayne that we should walk through the docs one more time to see if 
+we see this piece in it.  
+
+The Ratings that Dwayne mentions in his Sample Technology Device Questionnaire would be equivalent to the data types.  
+
+On Thu, Feb 14, 2019 at 10:44 AM Stephen Kahmann <stephen.kahmann@inovexcorp.com> wrote:
+A couple questions:
+
+ 
+
+I don’t understand the Question -> Response -> Question Set  -> Artifact process.
+In the description:
+                                                               i.      System owner receives questions (Question)
+
+                                                             ii.      System owner answers questions (Customer Response)
+
+                                                           iii.      System owner receives back relevant question set (Question Set)
+
+                                                           iv.      Based on question set, System owner provides artifacts (Document)
+
+I would expect:
+                                                               i.      System owner receives question set containing questions (Question/Question Set)
+
+                                                             ii.      System owner answers questions with associated artifacts (Customer Response/ Document)
+
+Following responses, is there a second question set for associated artifacts? Are multiple question sets treated the same way?
+What are Attestation Questions and do we need to handle them?
+An important question seems to be “What kind of data does your system have?” Is this represented in the questionnaire sample you sent?
+ 
+
+--
+
+Stephen Kahmann | Technical Lead, iNovex
+
+(937) 321-1923
+
+stephen@inovexcorp.com
+
+http://inovexcorp.com/
+
+ 
+
+ 
+
+From: "Dwayne K. Johnson" <dkj@transtechsol.com>
+Date: Thursday, February 14, 2019 at 12:14 AM
+To: Stephen Kahmann <stephen.kahmann@inovexcorp.com>
+Cc: Jim Chandler <jim.chandler@inovexcorp.com>, Phenesia Eusebio <pse@transtechsol.com>, scott beall <sabeall@choosefreedomit.com>
+Subject: Re: Sample Data
+
+ 
+
+Good Evening Stephen,
+
+ 
+
+Here is what we have so far:
+
+ 
+
+A system workflow with mappings to the ERD diagram.  Anything red is something we had a question about.
+
+ 
+
+A sample questionnaire, based on the previously sent datasets.
+
+ 
+
+ 
+
+Current System Workflow:  A System Owner would like to get their System Certified.  
+
+ 
+System Owner Registers a System in CMMT, providing initial data about the system
+
+(system description, etc) and who they are as a POC (one of the four horsemen:  TL, PM, M(ission) Lead, or LSE (Lead System Engineer).  
+
+Note:  There are small question-based wizards throughout the system; there is one here, which basically asks what kind of data does your system have.  
+
+ 
+System Owner Receives RVTM.  (In ERD, Questions)
+
+ 
+System Owner Answers Questions in RVTM (In ERD, Customer Response) and Receives Back a Relevant Question Set (In ERD, Question Set)  
+
+ 
+Based on Relevant Question Set, System Owner Provides Artifacts to justify answers.  (In ERD, Documents)
+
+ 
+Certification Team (Assigned Certifier) reviews answers and artifacts and makes a decision about the certification of the system.   (Not in our ERD, do we need it? Called a Certification Record, which basically says what the system is certified for)
+
+ 
+System Owner Answers Attestation Questions about the system.  (Also Not in Our ERD – Should it Be?)
+
+ 
+Database saves Certification Record, Artifacts, etc. including answers to the Attestation Questions, what type of data, who certified it, and the notice of certification.   
+
+ 
+Simple Metric Collection:  Senior Level Government may request information on the number of registered systems, the number of certified systems, the number of systems with a certain type of data, the number of systems with a certain type of data that are certified.  Often they ask, the number of systems with multiple types of data.   
+
+ 
+Elastic Search Analysis:  They’re preliminarily asking questions like:  the number of systems with this (or these) certain types of data with compliance functions like purge and audit (In our ERD, we’d need the Audit Events and the Audit Logs). 
+
+ 
+Our Prototype Use Case:  Parents Want to Set Parental Controls on Their Families’ Devices
+
+ 
+
+Parents Receive Questions about what controls to set on each device (In our ERD, Questions) 
+
+ 
+Parents Answer Questions (In our ERD, Customer Responses)  Database Stores Info on Question Response Time (In our ERD, Questions, but, should it be in Customer Response? (Timestamp).  
+
+ 
+Based on the controls they want for each device, Parents Receive Relevant Question Set (In our ERD, Question Set).  Children/Parent Sign Documents (In our ERD, Documents) Parents/Service Providers May Have Comments (In our ERD, Comments)
+
+ 
+ 
+Movies, TV Shows, Apps (Data Types) are Available (Not in our ERD, but, probably is equivalent of the Certification Record? – Should it be in ERD and stored?) and Accessed  (In our ERD, it’s Audit Log, but, we want to call it Data Source Audit Log)
+
+.  
+
+ 
+The following Events happen: 
+
+ 
+(1) Data Access Event:  Bart is able to access an Adult Content movie that should be off limits (In our ERD, Audit Log and Audit Event).  Are there any other devices (Lisa’s) that also are allowing access to the Adult Content Movie (In our ERD, Audit Log)
+
+ 
+(2)  Followed up by a Purge Event:  The movie is deleted by dad (Audit Log, Audit Event).  Is the movie still available on any device? (In our ERD, Audit Log)
+
+ 
+(3) Retention Event (In our ERD,  a rented movie "expires" after 48 hours. (In our ERD, Audit Log, Audit Event)
+
+ 
+(4) Query Event:  Lisa Queries on Movies.  She should only get back movies that have a rating she can see (In our ERD, Audit Event, Audit Log). 
+
+ 
+(5)  Data Tagging Event:  Mom wants to watch a movie she saw last week.  She should be able to see her "watched" history (In our ERD, Audit Event, Audit Log).  
+
+ 
+
+
+Dwayne K. Johnson, PMP, ABCP
+
+Principal Systems Engineer | TransTechSol
+
+Office: (443) 203-8230 | My ​LinkedIn Profile
+
+
+
+
+
+
+
+On Feb 13, 2019, at 10:08 PM, Phenesia Eusebio <pse@transtechsol.com> wrote:
+
+ 
+
+And we certainly appreciate you!!
+
+ 
+
+On Wed, Feb 13, 2019 at 9:59 PM Stephen Kahmann <stephen.kahmann@inovexcorp.com> wrote:
+
+Sounds good. Thanks guys, really appreciate the effort!
+
+ 
+
+Stephen
+
+ 
+
+--
+
+Stephen Kahmann | Technical Lead, iNovex
+
+(937) 321-1923
+
+stephen@inovexcorp.com
+
+http://inovexcorp.com/
+
+ 
+
+From: Phenesia Eusebio <pse@transtechsol.com>
+Sent: Wednesday, February 13, 2019 9:46 PM
+To: Stephen Kahmann
+Cc: Dwayne Johnson; Jim Chandler
+Subject: Re: Sample Data
+
+ 
+
+We're both working on our pieces now.  We are creating the current workflow, matched to the ERD, and then our prototype, matched
+
+to the ERD, so, everyone will understand the synopsis.  We're also working on the questions and the events.  Sorry for the delay;
+
+we had to walk through a few iterations to make sure we got it right.  Hopefully, in an hour we'll have something to you.
+
+ 
+
+~P
+
+ 
+
+On Wed, Feb 13, 2019 at 9:42 PM Stephen Kahmann <stephen.kahmann@inovexcorp.com> wrote:
+
+Hey guys,
+
+ 
+
+Any progress on the sample question and audit data?
+
+ 
+
+Thanks!
+
+Stephen
+
+ 
+
+--
+
+Stephen Kahmann | Technical Lead, iNovex
+
+(937) 321-1923
+
+stephen@inovexcorp.com
+
+http://inovexcorp.com/
+
+
+
+--
+
+~Phenesia Eusebio
+
+Principal Systems Engineer 
+TransTechSol, LLC 
+443.621.9582 Direct
+
+pse@transtechsol.com
+
+ 
+
+
+
+--
+
+~Phenesia Eusebio
+
+Principal Systems Engineer 
+TransTechSol, LLC 
+443.621.9582 Direct
+
+pse@transtechsol.com
+
+ 
+
+ 
+
+
+
+-- 
+~Phenesia Eusebio 
+Principal Systems Engineer 
+TransTechSol, LLC 
+443.621.9582 Direct
+pse@transtechsol.com
