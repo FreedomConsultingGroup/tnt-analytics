@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CustomerResponse Questions FK" directorySegmentName="seg_0" id="EA5253F2-24EA-1999-FF0F-62C17DA7D0B7">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:23:00 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<sourcePk>BA1F5383-39F4-FF71-0EAB-1350ACA2D48A</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A2BDD1C9-EC6E-E490-0420-81567BDE8B11</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>71A29EE8-9C1F-F952-2596-852AFF10C0E6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

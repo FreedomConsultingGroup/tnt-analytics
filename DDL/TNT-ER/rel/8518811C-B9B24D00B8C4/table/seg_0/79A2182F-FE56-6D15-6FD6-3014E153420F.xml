@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79A2182F-FE56-6D15-6FD6-3014E153420F" name="auditlog">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>5A1010F8-80F2-F992-B00D-296C5C8087A4</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customers_id" id="0F56DFEE-1EB2-AB63-EEB9-D880E992E876">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>561E960C-9677-273C-88CB-C8E2C25976AB</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24504514-E10B-C3A0-229A-5EDB81D23439" referredColumn="AC0AC603-6E1E-9750-88A7-B4000BA5E5D3"/>
+</associations>
+</Column>
+<Column name="auditevents_id" id="97EF794D-DBE5-9A8D-2BC6-09585B242312">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>18082807-14C8-8CE4-D018-D038FF9C457A</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F68301F3-1614-9545-DD89-5B26847952AD" referredColumn="94632B1C-92E6-D9F4-8345-BF20B4EF3EEC"/>
+</associations>
+</Column>
+<Column name="time_of_event" id="FBFE5BF5-2754-E587-E29A-998E33858392">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>7576A3C6-3BBF-D3BC-F974-C862D76329D1</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customers_userid" id="85D9C655-95E8-537A-4A89-1BF685DAC8A1">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-08 02:40:59 UTC</createdTime>
+<generatorID>1E475F6B-337E-AAF1-BB0C-96AE0FB9C6CD</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1458261F-84F5-008F-0F03-7861D6B01D83" name="auditlog_pk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>1CDB9662-8D25-14F5-7AE2-D55229519316</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F56DFEE-1EB2-AB63-EEB9-D880E992E876"/>
+<colUsage columnID="97EF794D-DBE5-9A8D-2BC6-09585B242312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B311F688-223D-97F4-D889-0525782EC0BD" name="auditlog_customers_fk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>05BB9494-BBBF-49FB-DCBA-D2CCDD683AD8</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F56DFEE-1EB2-AB63-EEB9-D880E992E876"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82A8D930-FB6C-FBF9-4CF1-4984054FACDF" name="auditlog_auditevents_fk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>A9FF6299-384C-764C-A04E-A7B87EFEBAFD</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97EF794D-DBE5-9A8D-2BC6-09585B242312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

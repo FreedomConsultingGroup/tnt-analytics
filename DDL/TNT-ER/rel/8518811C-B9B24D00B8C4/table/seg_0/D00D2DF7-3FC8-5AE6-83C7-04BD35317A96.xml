@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D00D2DF7-3FC8-5AE6-83C7-04BD35317A96" name="customerresponse">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>71A29EE8-9C1F-F952-2596-852AFF10C0E6</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customers_id" id="93F0961F-DA81-EF9A-9808-CF80DE8A7E5D">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>C455C8AC-354E-114A-61EB-965C7471B531</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FD4F986-0315-E3DE-4DE2-7E7D8DA2D685" referredColumn="AC0AC603-6E1E-9750-88A7-B4000BA5E5D3"/>
+</associations>
+</Column>
+<Column name="questions_id" id="2227A7F0-0420-56BF-D4D3-84830F381851">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>5D43EDDE-4246-453C-3A1D-DC3178EC2F9E</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64FF2327-E2B4-234C-0656-D6E1BEF2B085" referredColumn="0BA5AC3C-CBCA-8926-7C06-D4F756DA4B5C"/>
+</associations>
+</Column>
+<Column name="response_comment" id="75EECD0A-A1C4-F159-32DA-D936B27DFB98">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>C483AB2C-A11B-6BD9-9CC2-1AF1DE437049</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customers_userid" id="38E9D4C7-9A73-6F37-7711-529BBDDE93A3">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-08 02:40:59 UTC</createdTime>
+<generatorID>6FFC0652-28AC-E492-FB98-C7DABC90F117</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_answered" id="4072E5D9-D2D3-00D7-64C3-21C310766C53">
+<createdBy>scott</createdBy>
+<createdTime>2019-02-20 18:00:39 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="response" id="40AB0A9E-E357-983D-A0C5-59F0E6F664C6">
+<createdBy>scott</createdBy>
+<createdTime>2019-02-20 18:04:09 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A017997-AE33-E708-9E62-B2EC24C0BA71" name="customerresponse_pk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>B651DFD3-FB3E-9ECD-8CEE-430DE29EA28C</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93F0961F-DA81-EF9A-9808-CF80DE8A7E5D"/>
+<colUsage columnID="2227A7F0-0420-56BF-D4D3-84830F381851"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4485A8C1-8E73-7FEE-EC61-03C5228F159E" name="customerresponse_customers_fk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>4A23A3F6-C12B-113A-BCD0-BAC0C45D410F</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93F0961F-DA81-EF9A-9808-CF80DE8A7E5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="658B0182-26AA-EEEC-513F-5060EAAB70DF" name="customerresponse_questions_fk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>EA5253F2-24EA-1999-FF0F-62C17DA7D0B7</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2227A7F0-0420-56BF-D4D3-84830F381851"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

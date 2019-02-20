@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="11EC7BA1-F9AF-9CAD-0476-C30560141858" name="Documents">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:09:23 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="BB24BE34-A715-B015-0D53-55C39FB57666">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:16:11 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customers id" id="48075903-033A-CD22-E270-3DED0A71A885">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:17:28 UTC</createdTime>
+<generatorID>100C056D-88D5-BE81-CD3E-78D31FB6CDBE</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<referedAttribute>B5C143C1-EF8A-F113-9837-F25FE2EADD94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="18F97345-10BC-E28D-F97F-6CDD33B8E0A7">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:16:01 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Description" id="B5D7C63A-BEF2-FBFD-43BD-7083BC0533E4">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:16:06 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hash" id="18FF932B-FB68-0E81-E379-51AF8BF75F51">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:36:51 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date Uploaded" id="50724B1D-493D-315D-3C6A-23EC1658469C">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:40:42 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date Modified" id="EA84FA3F-B99A-BE9A-1089-2A42BD3974AD">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:40:55 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1A04CDDF-1523-95D0-1EFD-5622DE6AB62C" name="Documents PK">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:37:24 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BB24BE34-A715-B015-0D53-55C39FB57666</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

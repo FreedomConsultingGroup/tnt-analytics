@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8618F38C-FD31-34E2-3ABD-EC769E72CABD" name="documents">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>11EC7BA1-F9AF-9CAD-0476-C30560141858</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="BDFC891D-6BDB-8A8D-3B2C-3876C9580750">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>BB24BE34-A715-B015-0D53-55C39FB57666</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customers_id" id="E48F3D90-8762-95D2-92E1-FC910397364D">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>48075903-033A-CD22-E270-3DED0A71A885</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA82C776-DE7B-58AD-A3D8-C3E3322500D8" referredColumn="AC0AC603-6E1E-9750-88A7-B4000BA5E5D3"/>
+</associations>
+</Column>
+<Column name="name" id="4301DF7C-E632-41A1-B2C4-71279DBD15B9">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>18F97345-10BC-E28D-F97F-6CDD33B8E0A7</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="1DEDCDD6-6D12-C10C-A209-849E1BEAE2FD">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>B5D7C63A-BEF2-FBFD-43BD-7083BC0533E4</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hash" id="68473863-6F68-4586-49B5-72CF38BA9577">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>18FF932B-FB68-0E81-E379-51AF8BF75F51</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_uploaded" id="D089CB32-470B-A4A6-FEE1-DF7098B68D72">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>50724B1D-493D-315D-3C6A-23EC1658469C</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_modified" id="B2087213-F361-D1BA-1BE0-2B5C039A9D19">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>EA84FA3F-B99A-BE9A-1089-2A42BD3974AD</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comment" id="791835D6-2A60-8E7D-B5C5-570ADDEAE6B4">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-08 03:03:33 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="storage_path" id="802CD7E8-C6CF-F92F-5ACC-E4E54141744C">
+<createdBy>scott</createdBy>
+<createdTime>2019-02-20 18:06:59 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE15AA1F-C478-347A-0634-50BEED5CB945" name="documents_pk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>1A04CDDF-1523-95D0-1EFD-5622DE6AB62C</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDFC891D-6BDB-8A8D-3B2C-3876C9580750"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6D9E531-E4E1-ADF8-2ED7-C7CC1198F33E" name="documents_customers_fk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>100C056D-88D5-BE81-CD3E-78D31FB6CDBE</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E48F3D90-8762-95D2-92E1-FC910397364D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

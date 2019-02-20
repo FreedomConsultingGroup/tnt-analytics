@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13056799-9A68-ED7F-6DC5-222CB2BB498E" name="customers">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>409FC014-2283-4171-099E-73C6E2488CF8</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="AC0AC603-6E1E-9750-88A7-B4000BA5E5D3">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>B5C143C1-EF8A-F113-9837-F25FE2EADD94</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="userid" id="E6A4412C-B303-F3F6-94F9-4EAF5A733DB3">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-08 02:40:59 UTC</createdTime>
+<generatorID>7FF16D3F-4413-6FF8-FD45-1A4715F97203</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="C568CC75-B04C-E3B6-A67F-1C7FC02D4D25">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>8658092B-DD78-33FA-3ECA-E688E78342D2</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="511DEC90-4E46-FAB6-D314-9C89035C8291">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>8C6E20E3-2D54-520B-8649-254826DB9DFE</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_login" id="633C6DA0-C448-1EE0-16D9-29BDBE8D608B">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>F97D2AA4-B7DB-4A45-1CBA-E496D3690138</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_created" id="B05E1020-8696-7059-F9E7-B1C8F6C87053">
+<createdBy>scott</createdBy>
+<createdTime>2019-02-20 17:58:19 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_modified" id="A1449F86-C3B1-E7A3-4A1E-0A5C86DC5F90">
+<createdBy>scott</createdBy>
+<createdTime>2019-02-20 17:58:19 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="094BF124-22E3-FA71-2887-915EE6473128" name="customers_pk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>144DA838-77DC-D34C-62E6-7EB157C6F847</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC0AC603-6E1E-9750-88A7-B4000BA5E5D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
