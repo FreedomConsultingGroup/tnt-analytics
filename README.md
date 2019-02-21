@@ -6,4 +6,5 @@ docker pull 642192211069.dkr.ecr.us-east-1.amazonaws.com/pentaho:latest
 
 #To connect to 'cloud/RDS instance' do:
 #note instance and userid and password is tnt4all!
+#Note make sure you use pgadmin4!
 psql -h tntdb.cukikjchedgi.us-east-1.rds.amazonaws.com -p 5432 -d tntdb -U tnt
