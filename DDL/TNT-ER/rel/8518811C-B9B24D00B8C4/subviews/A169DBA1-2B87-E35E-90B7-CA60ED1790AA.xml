@@ -18,13 +18,23 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="698" y="199" width="234" height="142"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="1AA01861-DBD7-385D-0C15-62376A8AFD77" otype="Note" vid="D8A62DD5-70FE-67A7-E959-33389447D0CC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="402" y="419" width="216" height="102"/>
+<comment>customerresponse will store a given customers response to aspecific question.  Also, as guaranteed by the &apos;question_type&apos; entity, all qustions will match the desired format.  This will ensure that when data is uploaded into ES, they are normalized - thus ensuring consistency in the analytic</comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2284BECD-29BA-D38A-ED80-F3FB64E3D080" otype="Table" vid="838E6A35-8B1E-799E-A1EF-DE60EE30ED52">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="29" y="179" width="256" height="128"/>
+<bounds x="29" y="179" width="256" height="155"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="79A2182F-FE56-6D15-6FD6-3014E153420F" otype="Table" vid="1F620807-85B4-2E39-8D6C-7598B1DA3E7D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="320" y="70" width="291" height="142"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="7AD6B1B2-4755-F505-2697-5D6E9CF763B0" otype="Note" vid="A990F109-A566-4710-4BDA-EC3AC83C9791">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="379" y="490" width="95" height="40"/>
+<comment>Double click to &lt;br/&gt;edit the text.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8618F38C-FD31-34E2-3ABD-EC769E72CABD" otype="Table" vid="C15E0F50-136E-A5CE-6A8D-22A0FF6CB0A5">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -34,9 +44,18 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="31" y="54" width="196" height="91"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8EEDA34E-284E-2D18-BCC3-9E896658ADF1" otype="Table" vid="079B9DD1-A947-6D86-BF2E-AF39C5914B69">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="68" y="364" width="180" height="71"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D00D2DF7-3FC8-5AE6-83C7-04BD35317A96" otype="Table" vid="DD986163-0992-C3B0-B47A-DBD68F96794D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="332" y="245" width="287" height="157"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="DE1CEDC6-7FB4-F146-FCD5-ECDE292DAE18" otype="Note" vid="5B7C938F-0196-5D32-44A3-799349EF785A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="85" y="440" width="264" height="96"/>
+<comment>A Question Type will ensure that questions are somewhat normalized.. e.g. if the question type is:  Movie Ratings, then it will ensure that only valid movie ratings are specified, if the question type is an age, it will make sure that only a number is entered, if its &apos;freeform&apos; then anything can be input</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F0C376B6-0DB3-47E4-585E-0A1F4512A4DC" otype="Table" vid="EBE0001A-EE8A-AD01-A5B5-CF34DED05403">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -76,8 +95,17 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="285" y="276"/>
-<point x="332" y="276"/>
+<point x="285" y="289"/>
+<point x="332" y="289"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B8F03996-6FDC-575F-CEC2-8CC4C34143F6" otype="FKIndexAssociation" vid_source="079B9DD1-A947-6D86-BF2E-AF39C5914B69" vid_target="838E6A35-8B1E-799E-A1EF-DE60EE30ED52">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="113" y="364"/>
+<point x="113" y="334"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F68301F3-1614-9545-DD89-5B26847952AD" otype="FKIndexAssociation" vid_source="8F86E152-7F1A-0E70-1990-B59C011D7D6A" vid_target="1F620807-85B4-2E39-8D6C-7598B1DA3E7D">
