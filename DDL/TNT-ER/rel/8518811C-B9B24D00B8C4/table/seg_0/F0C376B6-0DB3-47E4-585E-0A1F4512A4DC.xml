@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0C376B6-0DB3-47E4-585E-0A1F4512A4DC" name="comments">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>16DDEF56-71F4-6282-44E1-41B2109068D4</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3D661A41-AA06-FEF0-3C78-21B45D5692CF">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>08ADED49-09D3-7CE7-EF06-74FD79AD28CD</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customers_id" id="22F4405E-6BB5-BB9E-E164-311E06989B39">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>F67588CB-82F5-E608-6884-E9F9A8DB9023</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2017DCBC-9F9D-D04C-AD6A-B08E539F25E7" referredColumn="AC0AC603-6E1E-9750-88A7-B4000BA5E5D3"/>
+</associations>
+</Column>
+<Column name="comment" id="6C5647C8-A6C4-78F4-E21E-053491DE1751">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>93E150E0-D8BE-C7B9-D460-B4FB8C02C53D</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_added" id="2679202D-508B-0EF3-2CA6-C9A11EFE2B3C">
+<createdBy>scott</createdBy>
+<createdTime>2019-02-20 17:59:27 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2057D251-1999-131C-0EAA-C36F18E0630B" name="comments_pk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>43AD4E73-80B9-4FB3-629A-BD5AD46CB56D</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D661A41-AA06-FEF0-3C78-21B45D5692CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="985A975D-F6F6-AE02-7764-9A6D8DB1CC29" name="comments_customers_fk">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:42:43 UTC</createdTime>
+<generatorID>BBA18448-C5FB-D2E7-EF03-E73DC459CEEB</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22F4405E-6BB5-BB9E-E164-311E06989B39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

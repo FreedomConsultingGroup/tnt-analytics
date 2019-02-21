@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A2BDD1C9-EC6E-E490-0420-81567BDE8B11" name="Questions">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:08:08 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="D526BA20-27C7-3B36-962C-E78DF6B6ADE1">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:14:08 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Question" id="3FFA07FA-33CF-5C82-6BBE-5E7A7B6A6A2D">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:14:16 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Question Description" id="AD115645-5FA3-5313-2E37-33B047FB90F4">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:14:22 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date Created" id="1CBABDFB-444D-2127-FDB7-0DEB2B8E0BD8">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:32:54 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date Modified" id="6A865773-75DC-6155-7171-97AAF0FD3A5A">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:33:03 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QuestionSet id" id="0FF6D0EC-DF0C-F875-F685-0965FE6F8DE9">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:36:02 UTC</createdTime>
+<generatorID>6D64641D-E112-0E3A-66F4-26C5C8526A73</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<referedAttribute>E84884AF-EB58-45A2-5EF7-831B236A570C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BA1F5383-39F4-FF71-0EAB-1350ACA2D48A" name="Questions PK">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:34:56 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D526BA20-27C7-3B36-962C-E78DF6B6ADE1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

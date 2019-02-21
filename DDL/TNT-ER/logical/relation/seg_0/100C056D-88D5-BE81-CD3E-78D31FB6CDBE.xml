@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Documents Customers FK" directorySegmentName="seg_0" id="100C056D-88D5-BE81-CD3E-78D31FB6CDBE">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:17:28 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<sourcePk>144DA838-77DC-D34C-62E6-7EB157C6F847</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>409FC014-2283-4171-099E-73C6E2488CF8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>11EC7BA1-F9AF-9CAD-0476-C30560141858</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

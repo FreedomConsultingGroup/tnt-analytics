@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="Flow_1" directorySegmentName="seg_0" id="8024DD6C-2DCA-CE06-6150-158A54EECFF1">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 19:33:04 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<destination>F579BA7A-85B1-CEF4-5F0A-8F96337C5021</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>false</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>E94EC0B2-DAD6-8A5E-FEC5-3CA93F1C0EF2</sourceProcessObject>
+<targetProcessObject>F579BA7A-85B1-CEF4-5F0A-8F96337C5021</targetProcessObject>
+</Flow>

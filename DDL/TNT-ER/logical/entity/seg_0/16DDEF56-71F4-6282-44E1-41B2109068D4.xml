@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="16DDEF56-71F4-6282-44E1-41B2109068D4" name="Comments">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:11:38 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="08ADED49-09D3-7CE7-EF06-74FD79AD28CD">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:14:39 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comment" id="93E150E0-D8BE-C7B9-D460-B4FB8C02C53D">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:14:35 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customers id" id="F67588CB-82F5-E608-6884-E9F9A8DB9023">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:17:20 UTC</createdTime>
+<generatorID>BBA18448-C5FB-D2E7-EF03-E73DC459CEEB</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<referedAttribute>B5C143C1-EF8A-F113-9837-F25FE2EADD94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43AD4E73-80B9-4FB3-629A-BD5AD46CB56D" name="Comments PK">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:36:08 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08ADED49-09D3-7CE7-EF06-74FD79AD28CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

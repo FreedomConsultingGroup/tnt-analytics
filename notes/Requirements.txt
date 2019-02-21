@@ -1,0 +1,27 @@
+Appendix A: Technical Challenge Scenario
+There is a modernization effort needed to support the growth of a business. Please complete the following task listed below.
+Goal: To modernize a new hosting environment with clear deployments and documented requirements.
+·	Task:
+o	Produce a high level sample diagram of a host environment which will support a master database, one or more supporting clusters with a security boundary. This database will allow ingest from other system APIs, and output to other systems with a display functionality for management reporting.
+o	Develop a Workflow diagram from an internal and an external customer transport through the database. Please show both how the internal and external customer answer the set of questions, and the answers are filed in the master database, and the supporting data clusters.
+o	Develop a group of analytics (in the language of your choice) that answers the following questions via the analytic examples:
+n	How many customers entered the database?
+n	At what time did the customers enter the system?
+n	At what time did the customers leave the system?
+n	What questions did the customer answer?
+n	Did that same customer leave a comment, where was the comment placed?
+n	Did the customer download/upload/ or attach any files. If so where were the file stored?
+o	Please show a display of the analytic output to the above questions.
+
+
+3.1.2 (U) Subfactor 2: Technical Challenge
+(U) The Government will evaluate the Offeror’s ability to produce an intelligent analytic that combines, sorts, and outputs results from multiple platforms to provide the information necessary to answer a series of questions to isolate a problem or increase an opportunity, as prescribed in PPI Appendix A Technical Challenge Scenario.
+3.1.2.1 (U) Did the Offeror create their own database of information to test and prove the success of their solution and did they include the sample database with their proposal? [Cross Ref: PPI, Para. 3.1.2.1]
+3.1.2.2 To what extent does the Offeror’s proposal demonstrate the ability for the analytic to ingest data, move the data from one system to another system, join the information, and provide reporting both in graphic display and standard reporting best practices? [Cross Ref: PPI, Para. 3.1.2.2]
+3.1.2.3 To what extent does the Offeror’s proposal demonstrate the ability to conduct comprehensive requirements analysis? [Cross Ref: PPI, Para. 3.1.2.3]
+3.1.2.4 To what extent does the Offeror’s proposal demonstrate the ability to design an analytic solution to the problem posed encompassing all significant results of the requirements analysis? [Cross Ref: PPI, Para. 3.1.2.4]
+3.1.2.5 To what extent does the Offeror’s proposal demonstrate the ability to provide sample analytic prototype in a common programming language that will monitor a data flow process? [Cross Ref: PPI, Para. 3.1.2.5]
+3.1.2.6 To what extent does the Offeror’s proposal demonstrate the ability provide a Software Test Plan that utilizes Industry/ Government Best Practices and test the analytic prototype developed in accordance with the plan? Offeror shall develop its own test data to support its testing process. [Cross Ref: PPI, Para. 3.1.2.6]
+3.1.2.7 To what extent does the Offeror’s proposal demonstrate the ability to provide release notes for the sprint where the analytic was developed that utilizes Industry/ Government Best Practices? [Cross Ref: PPI, Para. 3.1.2.7]
+3.1.2.8 To what extent does the Offeror’s proposal demonstrate the ability to provide training materials on the use of the analytic for senior and mid-level management? [Cross Ref: PPI, Para. 3.1.2.8]
+

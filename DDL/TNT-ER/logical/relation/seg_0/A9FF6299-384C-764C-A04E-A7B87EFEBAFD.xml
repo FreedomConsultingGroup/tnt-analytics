@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="AuditLog AuditEvents FK" directorySegmentName="seg_0" id="A9FF6299-384C-764C-A04E-A7B87EFEBAFD">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:28:16 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<sourcePk>75211F51-7DFA-CAB5-BB20-E13DC162112B</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6C2CA4AD-789F-80A4-96EB-C7E137F48EA8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5A1010F8-80F2-F992-B00D-296C5C8087A4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

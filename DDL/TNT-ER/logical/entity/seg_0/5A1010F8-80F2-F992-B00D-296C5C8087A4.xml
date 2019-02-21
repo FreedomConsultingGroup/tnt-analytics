@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5A1010F8-80F2-F992-B00D-296C5C8087A4" name="AuditLog">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:26:24 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Customers id" id="561E960C-9677-273C-88CB-C8E2C25976AB">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:26:44 UTC</createdTime>
+<generatorID>05BB9494-BBBF-49FB-DCBA-D2CCDD683AD8</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<referedAttribute>B5C143C1-EF8A-F113-9837-F25FE2EADD94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AuditEvents id" id="18082807-14C8-8CE4-D018-D038FF9C457A">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:32:08 UTC</createdTime>
+<generatorID>A9FF6299-384C-764C-A04E-A7B87EFEBAFD</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<referedAttribute>7FEE5739-09E6-54B4-82D0-D5106F49EFA1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Time Of Event" id="7576A3C6-3BBF-D3BC-F974-C862D76329D1">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:33:23 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customers userid" id="B6BD5FE8-0217-E89C-C88D-F875A8C98B64">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-08 02:50:02 UTC</createdTime>
+<generatorID>85D9C655-95E8-537A-4A89-1BF685DAC8A1</generatorID>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1CDB9662-8D25-14F5-7AE2-D55229519316" name="AuditLog PK">
+<createdBy>scottbeall</createdBy>
+<createdTime>2019-02-06 17:34:04 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8518811C-1E38-7967-CD79-B9B24D00B8C4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>561E960C-9677-273C-88CB-C8E2C25976AB</attributeRef>
+<attributeRef>18082807-14C8-8CE4-D018-D038FF9C457A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
