@@ -16,6 +16,5 @@ docker run -d -p 8081:8081 -v /Users/scottbeall/projects/pentaho-ktrs:/data 415d
 #By default, this will use 8181 for port #
 
 #To connect to 'cloud/RDS instance' do:
-#note instance and userid and password is tnt4all!
 #Note make sure you use pgadmin4!
 psql -h tntdb.cukikjchedgi.us-east-1.rds.amazonaws.com -p 5432 -d tntdb -U tnt
