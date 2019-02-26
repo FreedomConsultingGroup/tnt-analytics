@@ -1,0 +1,40 @@
+/**
+ * The Customerresponse entity.
+ *
+ * @author    
+ *
+ *
+ */
+class Customerresponse {
+    static mapping = {
+         table 'customerresponse'
+         // version is set to false, because this isn't available by default for legacy databases
+         version false
+         id column:'customers_id'
+         id column:'questions_id'
+         // In case a sequence is needed, changed the identity generator for the following code:
+//       id generator:'sequence', column:'id', params:[sequence:'customerresponse_sequence']
+         id generator:'identity', column:'id'
+         id composite:['customersId','questionsId','id'], generator:'assigned'
+    }
+    Long customersId
+    Long questionsId
+    String responseComment
+    String customersUserid
+    Date dateAnswered
+    String response
+    Long id
+
+    static constraints = {
+        customersId(max: 9999999999L)
+        questionsId(max: 9999999999L)
+        responseComment()
+        customersUserid(size: 1..25, blank: false)
+        dateAnswered(nullable: true)
+        response(size: 0..100)
+        id()
+    }
+    String toString() {
+        return "${customersId}" 
+    }
+}
