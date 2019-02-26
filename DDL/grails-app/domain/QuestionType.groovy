@@ -1,7 +1,7 @@
 /**
  * The QuestionType entity.
  *
- * @author  Scott Beall  FCG
+ * @author    
  *
  *
  */
@@ -10,14 +10,13 @@ class QuestionType {
          table 'question_type'
          // version is set to false, because this isn't available by default for legacy databases
          version false
-         id column:'id'
+         idQuestions column:'id'
     }
-    java.math.BigDecimal id
     String qustionType
 
     static constraints = {
-        id()
         qustionType(size: 0..25)
+        idQuestions()
     }
     String toString() {
         return "${id}" 
