@@ -1,7 +1,7 @@
 /**
  * The Questions entity.
  *
- * @author    
+ * @author  Scott Beall  FCG
  *
  *
  */
@@ -21,8 +21,6 @@ class Questions {
     Date dateModified
     java.math.BigDecimal questionTypeId
 
-    static hasMany = [ questionsIdCustomerresponseList : Customerresponse ]
-
     static constraints = {
         id(max: 9999999999L)
         question(size: 1..2000, blank: false)
@@ -30,8 +28,6 @@ class Questions {
         dateCreated()
         dateModified()
         questionTypeId()
-        // Bidirectional oneToMany
-        questionsIdCustomerresponseList()
     }
     String toString() {
         return "${id}" 

@@ -1,7 +1,7 @@
 /**
  * The Documents entity.
  *
- * @author    
+ * @author  Scott Beall  FCG
  *
  *
  */

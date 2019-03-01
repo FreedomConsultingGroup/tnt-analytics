@@ -1,7 +1,7 @@
 /**
  * The Customerresponse entity.
  *
- * @author    
+ * @author  Scott Beall  FCG
  *
  *
  */
@@ -22,10 +22,6 @@ class Customerresponse {
     Date dateAnswered
     String response
     Long id
-    // Relation
-    Customers customersIdCustomers
-    // Relation
-    Questions questionsIdQuestions
 
     static constraints = {
         responseComment()

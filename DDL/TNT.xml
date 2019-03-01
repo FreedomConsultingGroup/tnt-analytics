@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skelet>
+<config>
+<author>Scott Beall</author>
+<version>1.0</version>
+<company>FCG</company>
+<templates>
+<template-root>../templates/grails1</template-root>
+<config-param name="useRelations" value="true"/>
+</templates>
+</config>
+<module name="datasource">
+<module-data name="jndi-name"/>
+<module-data name="mapping">PostgreSQL</module-data>
+<module-data name="jdbc-url">jdbc:postgresql://tntdb.cukikjchedgi.us-east-1.rds.amazonaws.com:5432/tntdb</module-data>
+<module-data name="user-name">tnt</module-data>
+<module-data name="password">tnt4all!</module-data>
+</module>
+<module name="entity">
+<module-data name="name">Auditevents</module-data>
+<module-data name="display-name"/>
+<module-data name="description">Auditevents</module-data>
+<module-data name="table-name">auditevents</module-data>
+<module-data name="primary-key">id</module-data>
+<module-data name="primary-key-type">java.lang.Long</module-data>
+<module-data name="is-composite">false</module-data>
+<module-data name="is-association">false</module-data>
+<module-data name="relation">
+<module-data name="name">Audits</module-data>
+<module-data name="field-name">id</module-data>
+<module-data name="local-column">id</module-data>
+<module-data name="target-name"/>
+<module-data name="target-multiple">true</module-data>
+<module-data name="bidirectional">true</module-data>
+<module-data name="foreign-table">auditlog</module-data>
+<module-data name="foreign-column">auditevents_id</module-data>
+<module-data name="foreign-field">auditeventsId</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">id</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">description</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">description</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(2000)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..2000, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">code</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">code</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(50)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..50, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">eventDate</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">event_date</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">nullable: true</module-data>
+</module-data>
+</module>
+<module name="entity">
+<module-data name="name">Auditlog</module-data>
+<module-data name="display-name"/>
+<module-data name="description">Auditlog</module-data>
+<module-data name="table-name">auditlog</module-data>
+<module-data name="primary-key">id</module-data>
+<module-data name="primary-key-type">java.lang.Long</module-data>
+<module-data name="is-composite">false</module-data>
+<module-data name="is-association">false</module-data>
+<module-data name="relation">
+<module-data name="name">Customers</module-data>
+<module-data name="field-name">customersId</module-data>
+<module-data name="local-column">customers_id</module-data>
+<module-data name="target-name"/>
+<module-data name="target-multiple">true</module-data>
+<module-data name="bidirectional">false</module-data>
+<module-data name="foreign-table">customers</module-data>
+<module-data name="foreign-column">id</module-data>
+<module-data name="foreign-field">id</module-data>
+</module-data>
+<module-data name="relation">
+<module-data name="name">AuditEvents</module-data>
+<module-data name="field-name">customersId</module-data>
+<module-data name="local-column">customers_id</module-data>
+<module-data name="target-name"/>
+<module-data name="target-multiple">true</module-data>
+<module-data name="bidirectional">false</module-data>
+<module-data name="foreign-table">auditevents</module-data>
+<module-data name="foreign-column">id</module-data>
+<module-data name="foreign-field">id</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">customersId</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">customers_id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">auditeventsId</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">auditevents_id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">timeOfEvent</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">time_of_event</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+<module-data name="field">
+<module-data name="name">customersUserid</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">customers_userid</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(25)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..25, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">id</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">true</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+</module>
+<module name="entity">
+<module-data name="name">Comments</module-data>
+<module-data name="display-name"/>
+<module-data name="description">Comments</module-data>
+<module-data name="table-name">comments</module-data>
+<module-data name="primary-key">id</module-data>
+<module-data name="primary-key-type">java.lang.Long</module-data>
+<module-data name="is-composite">false</module-data>
+<module-data name="is-association">false</module-data>
+<module-data name="relation">
+<module-data name="name">Customers</module-data>
+<module-data name="field-name">customersId</module-data>
+<module-data name="local-column">customers_id</module-data>
+<module-data name="target-name"/>
+<module-data name="target-multiple">true</module-data>
+<module-data name="bidirectional">false</module-data>
+<module-data name="foreign-table">customers</module-data>
+<module-data name="foreign-column">id</module-data>
+<module-data name="foreign-field">id</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">id</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">true</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">comments</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">comments</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">TEXT</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">dateAdded</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">date_added</module-data>
+<module-data name="required">false</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">nullable: true</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">customersId</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">customers_id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+</module>
+<module name="entity">
+<module-data name="name">Customerresponse</module-data>
+<module-data name="display-name"/>
+<module-data name="description">Customerresponse</module-data>
+<module-data name="table-name">customerresponse</module-data>
+<module-data name="primary-key"/>
+<module-data name="primary-key-type"/>
+<module-data name="is-composite">true</module-data>
+<module-data name="is-association">false</module-data>
+<module-data name="relation">
+<module-data name="name">Customers</module-data>
+<module-data name="field-name">customersId</module-data>
+<module-data name="local-column">customers_id</module-data>
+<module-data name="target-name"/>
+<module-data name="target-multiple">false</module-data>
+<module-data name="bidirectional">false</module-data>
+<module-data name="foreign-table">customers</module-data>
+<module-data name="foreign-column">id</module-data>
+<module-data name="foreign-field">id</module-data>
+</module-data>
+<module-data name="relation">
+<module-data name="name">Questions</module-data>
+<module-data name="field-name">questionsId</module-data>
+<module-data name="local-column">questions_id</module-data>
+<module-data name="target-name"/>
+<module-data name="target-multiple">false</module-data>
+<module-data name="bidirectional">false</module-data>
+<module-data name="foreign-table">questions</module-data>
+<module-data name="foreign-column">id</module-data>
+<module-data name="foreign-field">id</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">customersId</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">customers_id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">questionsId</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">questions_id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">responseComment</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">response_comment</module-data>
+<module-data name="required">false</module-data>
+<module-data name="sql-type">TEXT</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+<module-data name="field">
+<module-data name="name">customersUserid</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">customers_userid</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(25)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..25, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">dateAnswered</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">date_answered</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">nullable: true</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">response</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">response</module-data>
+<module-data name="required">false</module-data>
+<module-data name="sql-type">VARCHAR(100)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 0..100</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">id</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">true</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+</module>
+<module name="entity">
+<module-data name="name">Customers</module-data>
+<module-data name="display-name"/>
+<module-data name="description">Customers</module-data>
+<module-data name="table-name">customers</module-data>
+<module-data name="primary-key">id</module-data>
+<module-data name="primary-key-type">java.lang.Long</module-data>
+<module-data name="is-composite">false</module-data>
+<module-data name="is-association">false</module-data>
+<module-data name="field">
+<module-data name="name">id</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">true</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">userid</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">userid</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(25)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..25, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">lastName</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">last_name</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(100)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..100, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">firstName</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">first_name</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(100)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..100, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">lastLogin</module-data>
+<module-data name="type">java.sql.Timestamp</module-data>
+<module-data name="column-name">last_login</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">TIMESTAMP</module-data>
+<module-data name="jdbc-type">TIMESTAMP</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+<module-data name="field">
+<module-data name="name">dateCreated</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">date_created</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">nullable: true</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">dateModified</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">date_modified</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">nullable: true</module-data>
+</module-data>
+</module>
+<module name="entity">
+<module-data name="name">Documents</module-data>
+<module-data name="display-name"/>
+<module-data name="description">Documents</module-data>
+<module-data name="table-name">documents</module-data>
+<module-data name="primary-key">id</module-data>
+<module-data name="primary-key-type">java.lang.Long</module-data>
+<module-data name="is-composite">false</module-data>
+<module-data name="is-association">false</module-data>
+<module-data name="relation">
+<module-data name="name">Customers</module-data>
+<module-data name="field-name">id</module-data>
+<module-data name="local-column">id</module-data>
+<module-data name="target-name"/>
+<module-data name="target-multiple">true</module-data>
+<module-data name="bidirectional">false</module-data>
+<module-data name="foreign-table">customers</module-data>
+<module-data name="foreign-column">id</module-data>
+<module-data name="foreign-field">id</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">id</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">true</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">customersId</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">customers_id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">name</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">name</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(100)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..100, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">description</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">description</module-data>
+<module-data name="required">false</module-data>
+<module-data name="sql-type">VARCHAR(2000)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 0..2000</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">hash</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">hash</module-data>
+<module-data name="required">false</module-data>
+<module-data name="sql-type">VARCHAR(2000)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 0..2000</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">dateUploaded</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">date_uploaded</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">nullable: true</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">dateModified</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">date_modified</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">nullable: true</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">comments</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">comments</module-data>
+<module-data name="required">false</module-data>
+<module-data name="sql-type">TEXT</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+<module-data name="field">
+<module-data name="name">storagePath</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">storage_path</module-data>
+<module-data name="required">false</module-data>
+<module-data name="sql-type">VARCHAR(2000)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 0..2000</module-data>
+</module-data>
+</module>
+<module name="entity">
+<module-data name="name">QuestionType</module-data>
+<module-data name="display-name"/>
+<module-data name="description">QuestionType</module-data>
+<module-data name="table-name">question_type</module-data>
+<module-data name="primary-key">id</module-data>
+<module-data name="primary-key-type">java.math.BigDecimal</module-data>
+<module-data name="is-composite">false</module-data>
+<module-data name="is-association">false</module-data>
+<module-data name="relation">
+<module-data name="name">Questions</module-data>
+<module-data name="field-name">id</module-data>
+<module-data name="local-column">id</module-data>
+<module-data name="target-name"/>
+<module-data name="target-multiple">false</module-data>
+<module-data name="bidirectional">false</module-data>
+<module-data name="foreign-table">questions</module-data>
+<module-data name="foreign-column">id</module-data>
+<module-data name="foreign-field">id</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">id</module-data>
+<module-data name="type">java.math.BigDecimal</module-data>
+<module-data name="column-name">id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">NUMERIC</module-data>
+<module-data name="jdbc-type">NUMERIC</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+<module-data name="field">
+<module-data name="name">qustionType</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">qustion_type</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(25)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 0..25</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">questionId</module-data>
+<module-data name="type">java.math.BigDecimal</module-data>
+<module-data name="column-name">question_id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">NUMERIC</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+</module>
+<module name="entity">
+<module-data name="name">Questions</module-data>
+<module-data name="display-name"/>
+<module-data name="description">Questions</module-data>
+<module-data name="table-name">questions</module-data>
+<module-data name="primary-key">id</module-data>
+<module-data name="primary-key-type">java.lang.Long</module-data>
+<module-data name="is-composite">false</module-data>
+<module-data name="is-association">false</module-data>
+<module-data name="field">
+<module-data name="name">id</module-data>
+<module-data name="type">java.lang.Long</module-data>
+<module-data name="column-name">id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">INT4(10)</module-data>
+<module-data name="jdbc-type">INTEGER</module-data>
+<module-data name="primary-key">true</module-data>
+<module-data name="auto-primary-key">true</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">max: 9999999999L</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">question</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">question</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(2000)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..2000, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">questionDescription</module-data>
+<module-data name="type">java.lang.String</module-data>
+<module-data name="column-name">question_description</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">VARCHAR(2000)</module-data>
+<module-data name="jdbc-type">VARCHAR</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml">size: 1..2000, blank: false</module-data>
+</module-data>
+<module-data name="field">
+<module-data name="name">dateCreated</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">date_created</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+<module-data name="field">
+<module-data name="name">dateModified</module-data>
+<module-data name="type">java.util.Date</module-data>
+<module-data name="column-name">date_modified</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">DATE</module-data>
+<module-data name="jdbc-type">DATE</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">false</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+<module-data name="field">
+<module-data name="name">questionTypeId</module-data>
+<module-data name="type">java.math.BigDecimal</module-data>
+<module-data name="column-name">question_type_id</module-data>
+<module-data name="required">true</module-data>
+<module-data name="sql-type">NUMERIC</module-data>
+<module-data name="jdbc-type">NUMERIC</module-data>
+<module-data name="primary-key">false</module-data>
+<module-data name="auto-primary-key">false</module-data>
+<module-data name="foreign-key">true</module-data>
+<module-data name="validation-xml"/>
+</module-data>
+</module>
+</skelet>

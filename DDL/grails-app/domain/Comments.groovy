@@ -1,7 +1,7 @@
 /**
  * The Comments entity.
  *
- * @author    
+ * @author  Scott Beall  FCG
  *
  *
  */

@@ -1,7 +1,7 @@
 /**
  * The Auditevents entity.
  *
- * @author    
+ * @author  Scott Beall  FCG
  *
  *
  */

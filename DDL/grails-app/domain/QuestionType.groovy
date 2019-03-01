@@ -1,7 +1,7 @@
 /**
  * The QuestionType entity.
  *
- * @author    
+ * @author  Scott Beall  FCG
  *
  *
  */
@@ -13,9 +13,11 @@ class QuestionType {
          idQuestions column:'id'
     }
     String qustionType
+    java.math.BigDecimal questionId
 
     static constraints = {
         qustionType(size: 0..25)
+        questionId()
         idQuestions()
     }
     String toString() {
