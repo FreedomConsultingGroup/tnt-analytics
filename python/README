@@ -1,0 +1,6 @@
+#You'll need to install the following Python modules
+pip install elasticsearch
+pip install certifi
+#After you install certfi, do:  python -m certifi
+#This will give you the path of your cert, use that in your code
+
