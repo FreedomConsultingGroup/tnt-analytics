@@ -1,0 +1,5 @@
+"ZookeeperConnectString": "10.0.1.253:2181,10.0.0.195:2181,10.0.3.65:2181"
+aws kafka get-bootstrap-brokers --region us-east-1 --cluster-arn  "arn:aws:kafka:us-east-1:642192211069:cluster/tnt-kafka/24b281d2-bde3-40fc-ab4f-de08daa4bf50-3"
+{
+    "BootstrapBrokerString": "10.0.0.175:9092,10.0.3.56:9092,10.0.1.68:9092"
+}
