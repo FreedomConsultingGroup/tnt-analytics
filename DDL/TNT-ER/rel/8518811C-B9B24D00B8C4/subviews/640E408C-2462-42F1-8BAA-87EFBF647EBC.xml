@@ -16,29 +16,34 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="13056799-9A68-ED7F-6DC5-222CB2BB498E" otype="Table" vid="7F548F2D-8A7E-378E-2485-B801C0D2F063">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="700" y="85" width="234" height="142"/>
+<bounds x="700" y="85" width="234" height="151"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2284BECD-29BA-D38A-ED80-F3FB64E3D080" otype="Table" vid="D9D5BE83-3DAE-0114-B3FE-8EBA40FEE9D6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="31" y="65" width="256" height="145"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="6097DF00-4D3C-AA1D-89C5-717F4555D4ED" otype="Note" vid="4D21880B-96C3-2EAA-7A78-08B67CDE1078">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="710" y="245" width="207" height="83"/>
+<comment>Customers are the users of this system&lt;br/&gt;The information here could be more extensive, such as data pulled from searchlight.&lt;br/&gt;Device here will tie a customers device to accesses shown in logs</comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="81B3D6D1-2579-4C09-72F2-51A8FE51562F" otype="Note" vid="651D74DD-3B88-C10D-D9B0-131713D0AF58">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="57" y="28" width="524" height="22"/>
+<bounds x="57" y="37" width="524" height="22"/>
 <comment>Model showing our understanding of how we would capture Q+A Questions</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="89BC67A4-5A3D-D23F-21FA-5439098C85FA" otype="Note" vid="9C757E52-9C17-DDDE-F2B4-DE47BF508C60">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="57" y="321" width="272" height="83"/>
+<bounds x="53" y="308" width="272" height="83"/>
 <comment>A Question Type will ensure that questions are somewhat normalized.. e.g. if the question type is:  Movie Ratings, then it will ensure that only valid movie ratings are specified, if the question type is an age, it will make sure that only a number is entered, if its &apos;freeform&apos; then anything can be input</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8EEDA34E-284E-2D18-BCC3-9E896658ADF1" otype="Table" vid="1C84025F-6C54-3BDD-D942-A3E45775121B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="70" y="250" width="180" height="71"/>
+<bounds x="72" y="236" width="180" height="71"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="AE2C1B84-DBB4-D034-FCCD-7A53F34FB435" otype="Note" vid="1D3A8747-4899-EA02-37A7-AF64777C1AC5">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="372" y="225" width="281" height="91"/>
+<bounds x="352" y="231" width="281" height="91"/>
 <comment>customerresponse will store a given customers response to aspecific question.  Also, as guaranteed by the &apos;question_type&apos; entity, all qustions will match the desired format.  This will ensure that when data is uploaded into ES, they are normalized - thus ensuring consistency in the analytic</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D00D2DF7-3FC8-5AE6-83C7-04BD35317A96" otype="Table" vid="DE344534-6E02-39E7-1DDD-6DDAD6AA026F">
@@ -61,7 +66,7 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="285" y="179"/>
+<point x="287" y="179"/>
 <point x="342" y="139"/>
 </points>
 </Connector>
@@ -70,8 +75,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="160" y="250"/>
-<point x="160" y="179"/>
+<point x="162" y="236"/>
+<point x="162" y="210"/>
 </points>
 </Connector>
 </connectors>

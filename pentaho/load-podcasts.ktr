@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>load-movie-query</name>
+    <name>load-podcasts</name>
     <description />
     <extended_description />
     <trans_version />
     <trans_type>Normal</trans_type>
-    <trans_status>0</trans_status>
     <directory>/</directory>
     <parameters>
     </parameters>
@@ -416,7 +415,7 @@
     <feedback_size>50000</feedback_size>
     <using_thread_priorities>Y</using_thread_priorities>
     <shared_objects_file />
-    <capture_step_performance>Y</capture_step_performance>
+    <capture_step_performance>N</capture_step_performance>
     <step_performance_capturing_delay>1000</step_performance_capturing_delay>
     <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
     <dependencies>
@@ -424,50 +423,26 @@
     <partitionschemas>
     </partitionschemas>
     <slaveservers>
-      <slaveserver>
-        <name>foo</name>
-        <hostname>localhost</hostname>
-        <port>8181</port>
-        <webAppName />
-        <username>cluster</username>
-        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname />
-        <proxy_port />
-        <non_proxy_hosts />
-        <master>Y</master>
-        <sslMode>N</sslMode>
-      </slaveserver>
     </slaveservers>
     <clusterschemas>
-      <clusterschema>
-        <name>foo2</name>
-        <base_port>40000</base_port>
-        <sockets_buffer_size>2000</sockets_buffer_size>
-        <sockets_flush_interval>5000</sockets_flush_interval>
-        <sockets_compressed>Y</sockets_compressed>
-        <dynamic>N</dynamic>
-        <slaveservers>
-          <name>foo</name>
-        </slaveservers>
-      </clusterschema>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2019/02/17 23:24:55.068</created_date>
+    <created_date>2019/03/19 02:17:04.779</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2019/02/17 23:24:55.068</modified_date>
+    <modified_date>2019/03/19 02:17:04.779</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
     <notepad>
-      <note>Load Movie-Query log data into ES
+      <note>Load Podcast Log data into ES
 Written by: Scott Beall (sabeall)
 Description:
-Load CSV formatted Movie-Query.log data
+Load CSV Podcast log data
 into ElasticSearch</note>
       <xloc>0</xloc>
       <yloc>0</yloc>
-      <width>270</width>
+      <width>204</width>
       <heigth>90</heigth>
       <fontname>.SF NS Text</fontname>
       <fontsize>13</fontsize>
@@ -486,7 +461,7 @@ into ElasticSearch</note>
     </notepad>
   </notepads>
   <connection>
-    <name>tnt</name>
+    <name>TNT</name>
     <server>tntdb.cukikjchedgi.us-east-1.rds.amazonaws.com</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
@@ -521,18 +496,18 @@ into ElasticSearch</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Convert movie-query to JSON</from>
+      <from>Convert podcast data to JSON</from>
       <to>Add ES URL</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Read movie-query log</from>
+      <from>Read podcast log</from>
       <to>Database lookup</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Database lookup</from>
-      <to>Convert movie-query to JSON</to>
+      <to>Convert podcast data to JSON</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -574,7 +549,7 @@ into ElasticSearch</note>
     </GUI>
   </step>
   <step>
-    <name>Convert movie-query to JSON</name>
+    <name>Convert podcast data to JSON</name>
     <type>ScriptValueMod</type>
     <description />
     <distribute>Y</distribute>
@@ -643,7 +618,7 @@ var data = JSON.stringify({"access_date":access_date,
         <currency />
         <decimal />
         <group />
-        <nullif>https://search-toiltrouble2-mg4ycgvgucahib4lulughlocci.us-east-1.es.amazonaws.com:443/movie-query/movie-query</nullif>
+        <nullif>https://search-toiltrouble2-mg4ycgvgucahib4lulughlocci.us-east-1.es.amazonaws.com:443/podcasts/podcasts</nullif>
         <length>200</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
@@ -663,7 +638,7 @@ var data = JSON.stringify({"access_date":access_date,
       </output>
     </remotesteps>
     <GUI>
-      <xloc>112</xloc>
+      <xloc>80</xloc>
       <yloc>384</yloc>
       <draw>Y</draw>
     </GUI>
@@ -693,7 +668,7 @@ var data = JSON.stringify({"access_date":access_date,
     <fileNameField />
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>/Users/scott/Documents/projects/pentaho-ktrs/logs/load-movie</name>
+      <name>/Users/scott/documents/projects/pentaho-ktrs/logs/load-movie</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>err</extention>
@@ -802,7 +777,7 @@ var data = JSON.stringify({"access_date":access_date,
     </GUI>
   </step>
   <step>
-    <name>Read movie-query log</name>
+    <name>Read podcast log</name>
     <type>CsvInput</type>
     <description />
     <distribute>Y</distribute>
@@ -812,7 +787,7 @@ var data = JSON.stringify({"access_date":access_date,
       <method>none</method>
       <schema_name />
     </partitioning>
-    <filename>/Users/scott/Documents/projects/tnt-analytics/data/movie.log</filename>
+    <filename>/Users/scott/Documents/projects/tnt-analytics/data/podCast.log</filename>
     <filename_field />
     <rownum_field />
     <include_filename>N</include_filename>
@@ -896,12 +871,12 @@ var data = JSON.stringify({"access_date":access_date,
       <method>none</method>
       <schema_name />
     </partitioning>
-    <connection>tnt</connection>
+    <connection>TNT</connection>
     <cache>Y</cache>
     <cache_load_all>Y</cache_load_all>
     <cache_size>0</cache_size>
     <lookup>
-      <schema />
+      <schema>public</schema>
       <table>customers</table>
       <orderby />
       <fail_on_multiple>N</fail_on_multiple>
@@ -928,7 +903,7 @@ var data = JSON.stringify({"access_date":access_date,
       </output>
     </remotesteps>
     <GUI>
-      <xloc>80</xloc>
+      <xloc>64</xloc>
       <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>

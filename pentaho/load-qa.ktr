@@ -416,7 +416,7 @@
     <feedback_size>50000</feedback_size>
     <using_thread_priorities>Y</using_thread_priorities>
     <shared_objects_file />
-    <capture_step_performance>N</capture_step_performance>
+    <capture_step_performance>Y</capture_step_performance>
     <step_performance_capturing_delay>1000</step_performance_capturing_delay>
     <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
     <dependencies>
@@ -607,7 +607,7 @@
     <fileNameField />
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>/Users/scottbeall/projects/pentaho-ktrs/logs/parse</name>
+      <name>/Users/scott/Documents</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>log</extention>
@@ -809,8 +809,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>591</xloc>
-      <yloc>162</yloc>
+      <xloc>592</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -826,10 +826,14 @@
       <schema_name />
     </partitioning>
     <connection>tntdb</connection>
-    <sql>select c.userid,cr.response,cr.date_answered,q.question
-from customers c, customerresponse cr, questions q
+    <sql>select c.userid,cr.date_answered,q.question,cr.response,
+qt.question_type,cr.response_comment,cr.document,c.device
+from customers c, 
+customerresponse cr, questions q, question_type qt 
 where c.id = cr.customers_id 
-and q.id = cr.questions_id </sql>
+and q.id = cr.questions_id 
+and qt.id=q.question_type_id
+</sql>
     <limit>0</limit>
     <lookup />
     <execute_each_row>N</execute_each_row>
@@ -870,11 +874,14 @@ and q.id = cr.questions_id </sql>
 "userid":userid,
 "question":question,
 "response":response,
-"date_answered":str2date(date_answered,"yyyy-mm-dd"),
-"question":question
+"date_answered":date2str(date_answered,"yyyy-MM-dd"),
+"question_type":question_type,
+"comments":response_comment,
+"document":document,
+"device":device
 });
 //Alert(result);
-
+//"date_answered":date2str(date_answered,"yyyy-mm-dd"),
 </jsScript_script>
       </jsScript>
     </jsScripts>
@@ -897,8 +904,8 @@ and q.id = cr.questions_id </sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>208</xloc>
-      <yloc>160</yloc>
+      <xloc>192</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

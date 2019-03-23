@@ -50,18 +50,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="customers_userid" id="38E9D4C7-9A73-6F37-7711-529BBDDE93A3">
-<createdBy>scottbeall</createdBy>
-<createdTime>2019-02-08 02:40:59 UTC</createdTime>
-<generatorID>6FFC0652-28AC-E492-FB98-C7DABC90F117</generatorID>
-<ownerDesignName>TNT-ER</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="date_answered" id="4072E5D9-D2D3-00D7-64C3-21C310766C53">
 <createdBy>scott</createdBy>
 <createdTime>2019-02-20 18:00:39 UTC</createdTime>
@@ -83,6 +71,18 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="document" id="51C3F6D3-59BB-496B-0EC7-0384684B4F4F">
+<createdBy>scott</createdBy>
+<createdTime>2019-03-20 02:04:03 UTC</createdTime>
+<ownerDesignName>TNT-ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

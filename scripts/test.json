@@ -1,0 +1,30 @@
+"mappings": {
+    "qa": {
+        "properties": {
+            "userid": {
+                "type": "keyword"
+            },
+            "question": {
+                "type": "keyword"
+            },
+            "response": {
+                "type": "keyword"
+            },
+            "date_answered": {
+                "type": "date"
+            },
+            "question": {
+                "type": "keyword"
+            },
+            "question_type": {
+                "type": "keyword"
+            },
+            "comments": {
+                "type": "keyword"
+            },
+            "document": {
+                "type": "keyword"
+            }
+        }
+    }
+}
